@@ -18,8 +18,8 @@ class CoreDataStack {
     }
     
     private(set) lazy var persistentContainer: NSPersistentContainer = {
-        let container = NSPersistentCloudKitContainer(name: "xxx", managedObjectModel: NSManagedObjectModel.xxx)
-        //let container = NSPersistentContainer(name: "xxx", managedObjectModel: NSManagedObjectModel.xxx)
+        let container = NSPersistentCloudKitContainer(name: "xxx")
+        //let container = NSPersistentContainer(name: "xxx")
         
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
